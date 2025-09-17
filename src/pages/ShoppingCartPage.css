@@ -1,0 +1,113 @@
+.cart-page {
+  margin-top: 5%;
+  padding: 2rem;
+  min-height: calc(100vh - 140px);
+  max-height: calc(100vh - 140px);
+  overflow-y: scroll;
+  background: #f7faf7;
+  width: 90vw;
+  max-width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  box-sizing: border-box;
+}
+.cart-summary {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+.cart-item {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  padding: 1rem;
+}
+.cart-item-img {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 0.75rem;
+  margin-right: 1rem;
+}
+.cart-item-info {
+  flex: 1;
+}
+.cart-qty-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+}
+.cart-qty-controls button {
+  background: #388e3c;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  width: 32px;
+  height: 32px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.cart-qty-controls button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+.delete-btn {
+  background: #e53935;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-left: 1rem;
+  transition: background 0.2s;
+}
+.delete-btn:hover {
+  background: #b71c1c;
+}
+.cart-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.continue-btn {
+  background: #388e3c;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.continue-btn:hover {
+  background: #4caf50;
+}
+.checkout-btn {
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.checkout-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+.checkout-btn:hover:enabled {
+  background: #1565c0;
+}
